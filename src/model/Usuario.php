@@ -11,9 +11,8 @@ class Usuario()
     private $profissao;
     private $cpf;
     private $cidade;
-    private $email;
 
-    public function __construct($id_usuario, $nome_usuario, $idade, $login, $senha, $sexo, $profissao, $cpf, $cidade, $email)
+    public function __construct($id_usuario, $nome_usuario, $idade, $login, $senha, $sexo, $profissao, $cpf, $cidade)
     {
         $this->id_usuario = $id_usuario;
         $this->nome_usuario = $nome_usuario;
@@ -24,7 +23,6 @@ class Usuario()
         $this->profissao = $profissao;
         $this->cpf = $cpf;
         $this->cidade = $cidade;
-        $this->email = $email;
     }
 
     /**
@@ -203,26 +201,6 @@ class Usuario()
         public function setCidade($cidade)
         {
                 $this->cidade = $cidade;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of email
-         */ 
-        public function getEmail()
-        {
-                return $this->email;
-        }
-
-        /**
-         * Set the value of email
-         *
-         * @return  self
-         */ 
-        public function setEmail($email)
-        {
-                $this->email = $email;
 
                 return $this;
         }
