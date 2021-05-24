@@ -7,9 +7,12 @@
     box-shadow: 1px 5px 30px rgb(138, 137, 137);
 }
 #fundo{
-    background-color: rgb(rgb(78, 78, 78), green, blue));
+    background-color: rgb(rgb(78, 78, 78), green, blue);
 }
 #links{
     position: center;
     
+}
+#topper{
+    position: center;
 }
