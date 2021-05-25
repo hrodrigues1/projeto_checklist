@@ -1,0 +1,31 @@
+CREATE table Checklist(
+id_checklist serial primary key,
+nome_checklist VARCHAR(100),
+status 		 VARCHAR(10),
+percent  INTEGER,
+data 	DATE);
+/*-----------------------------------*/
+CREATE Table Notificacao(
+id_notificacao serial primary key,
+id_usuario INTEGER,
+mensagem	VARCHAR(200));
+/*-----------------------------------*/
+CREATE Table Tarefa(
+id_tarefa serial primary key,
+descricao VARCHAR(100),
+status VARCHAR(10),
+data_aberto DATE, 
+data_conclusao DATE,
+list VARCHAR(50));
+/*-----------------------------------*/
+CREATE Table Usuario(
+id_usuario serial primary key,
+nome_usuario VARCHAR(100),
+idade INTEGER,
+login VARCHAR(20),
+senha VARCHAR(8),
+sexo  VARCHAR(20),
+profissao VARCHAR(50),
+cpf VARCHAR(11),
+cidade VARCHAR(50));
+/*-----------------------------------*/

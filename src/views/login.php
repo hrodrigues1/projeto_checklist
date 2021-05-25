@@ -16,21 +16,21 @@
     <div class="card" id="login_view">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
-        <form>
+        <form action="../controller/executa_login.php" method="POST" role="form">
           <div>
             <img src="assets/img/logo1.png" class="img-fluid" alt="...">
 
           </div>
           <div class="form-group">
             <label>Login</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe seu e-mail">
+            <input type="email" class="form-control" id="login" name="login" aria-describedby="emailHelp" placeholder="Informe seu e-mail">
             <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail com ninguém.</small>
           </div>
           <div class="form-group">
             <label>Senha</label>
-            <input type="password" class="form-control" id="" placeholder="Informe sua senha">
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Informe sua senha">
           </div>
-          <button type="Enviar" class="btn btn-light btn-lg btn-block">Entrar</button>
+          <button type="submit" class="btn btn-light btn-lg btn-block">Entrar</button>
           <div id="links"> 
             <button type="Esqueci minha senha" class="btn btn-link">Esqueci minha senha</button>
             <button type="Criar conta" class="btn btn-link">Criar conta</button>
