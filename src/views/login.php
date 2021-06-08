@@ -33,7 +33,7 @@
           <button type="submit" class="btn btn-light btn-lg btn-block">Entrar</button>
           <div id="links"> 
             <button type="Esqueci minha senha" class="btn btn-link">Esqueci minha senha</button>
-            <button type="Criar conta" class="btn btn-link">Criar conta</button>
+            <button type="Criar conta" class="btn btn-link" href="newUser.php">Criar conta</button>
           </div>
         </form>
       </div>

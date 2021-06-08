@@ -1,28 +1,28 @@
 <?php
 
-class Usuario()
+class Usuario
 {
     private $id_usuario;
     private $nome_usuario;
-    private $idade;
     private $login;
     private $senha;
     private $sexo;
     private $profissao;
     private $cpf;
     private $cidade;
+    private $estado;
 
-    public function __construct($id_usuario, $nome_usuario, $idade, $login, $senha, $sexo, $profissao, $cpf, $cidade)
+    public function __construct($id_usuario, $nome_usuario, $login, $senha, $sexo, $profissao, $cpf, $cidade, $estado)
     {
         $this->id_usuario = $id_usuario;
         $this->nome_usuario = $nome_usuario;
-        $this->idade = $idade;
         $this->login = $login;
         $this->senha = $senha;
         $this->sexo = $sexo;
         $this->profissao = $profissao;
         $this->cpf = $cpf;
         $this->cidade = $cidade;
+        $this->estado = $estado;
     }
 
     /**
@@ -61,26 +61,6 @@ class Usuario()
     public function setNome_usuario($nome_usuario)
     {
         $this->nome_usuario = $nome_usuario;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of idade
-     */ 
-    public function getIdade()
-    {
-        return $this->idade;
-    }
-
-    /**
-     * Set the value of idade
-     *
-     * @return  self
-     */ 
-    public function setIdade($idade)
-    {
-        $this->idade = $idade;
 
         return $this;
     }
@@ -204,6 +184,26 @@ class Usuario()
 
                 return $this;
         }
+
+    /**
+     * Get the value of idade
+     */ 
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * Set the value of idade
+     *
+     * @return  self
+     */ 
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
 }
 
 

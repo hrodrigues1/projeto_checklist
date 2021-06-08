@@ -9,7 +9,7 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
 
         $usuario = null;
 
-        $query = "SELECT id_usuario, nome_usuario, idade, login, senha, sexo, profissao, cpf, cidade " .
+        $query = "SELECT id_usuario, nome_usuario, login, senha, sexo, profissao, cpf, cidade, estado " .
                  "FROM usuario where login = ? " .
                  "LIMIT 1 OFFSET 0";
      
@@ -19,12 +19,42 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
      
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if($row) {
-            $usuario = new Usuario($row['id_usuario'], $row['nome_usuario'], $row['idade'], 
+            $usuario = new Usuario($row['id_usuario'], $row['nome_usuario'], 
                                    $row['login'], $row['senha'], $row['sexo'],
-                                   $row['profissao'], $row['cpf'], $row['cidade']);
+                                   $row['profissao'], $row['cpf'], $row['cidade'], $row['estado']);
         } 
      
         return $usuario;
+    }
+
+    public function insere_usuario($usuario) 
+    {
+
+        $query = "INSERT INTO USUARIO" .
+        "(nome_usuario, login, senha, " .
+        "sexo, profissao, cpf, " .
+        "cidade, estado) " .   
+        "values(:nome_usuario, :login, :senha, " .
+        ":sexo, :profissao, :cpf, " .
+        ":cidade, :estado) ";
+
+        $stmt = $this->conn->prepare($query);
+
+        // bind values 
+        $stmt->bindValue(":nome_usuario", $usuario->getNome_usuario());
+        $stmt->bindValue(":login", $usuario->getLogin());
+        $stmt->bindValue(":senha", md5($usuario->getSenha()));
+        $stmt->bindValue(":sexo", $usuario->getSexo());
+        $stmt->bindValue(":profissao", $usuario->getProfissao());
+        $stmt->bindValue(":cpf", $usuario->getCpf());
+        $stmt->bindValue(":cidade", $usuario->getCidade());
+        $stmt->bindValue(":estado", $usuario->getEstado());
+
+        if($stmt->execute()){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
 ?>

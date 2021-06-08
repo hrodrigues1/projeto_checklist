@@ -1,6 +1,6 @@
 <?php 
 // Métodos de acesso ao banco de dados 
-require "fachada.php"; 
+require "../fachada.php"; 
  
 // Inicia sessão 
 session_start();
@@ -8,7 +8,7 @@ session_start();
 // Recupera o login 
 $login = isset($_POST["login"]) ? addslashes(trim($_POST["login"])) : FALSE; 
 // Recupera a senha, a criptografando em MD5 
-$senha = isset($_POST["senha"]) ? md5(trim($_POST["senha"])) : FALSE; 
+$senha = isset($_POST["senha"]) ? addslashes(trim($_POST["senha"])) : FALSE; 
 
  
 // Usuário não forneceu a senha ou o login 
@@ -31,7 +31,7 @@ if($usuario) {
         $_SESSION["id_usuario"]= $usuario->getId_usuario(); 
         $_SESSION["nome_usuario"] = stripslashes($usuario->getNome_usuario()); 
         //$_SESSION["permissao"]= $dados["postar"]; 
-        header("Location: index.php"); 
+        header("Location: ../views/home.php"); 
         exit; 
     } else {
         $problemas = TRUE; 
