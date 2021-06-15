@@ -6,19 +6,17 @@ class Usuario
     private $nome_usuario;
     private $login;
     private $senha;
-    private $sexo;
     private $profissao;
     private $cpf;
     private $cidade;
     private $estado;
 
-    public function __construct($id_usuario, $nome_usuario, $login, $senha, $sexo, $profissao, $cpf, $cidade, $estado)
+    public function __construct($id_usuario, $nome_usuario, $login, $senha, $profissao, $cpf, $cidade, $estado)
     {
         $this->id_usuario = $id_usuario;
         $this->nome_usuario = $nome_usuario;
         $this->login = $login;
         $this->senha = $senha;
-        $this->sexo = $sexo;
         $this->profissao = $profissao;
         $this->cpf = $cpf;
         $this->cidade = $cidade;
@@ -101,26 +99,6 @@ class Usuario
         public function setSenha($senha)
         {
                 $this->senha = $senha;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of sexo
-         */ 
-        public function getSexo()
-        {
-                return $this->sexo;
-        }
-
-        /**
-         * Set the value of sexo
-         *
-         * @return  self
-         */ 
-        public function setSexo($sexo)
-        {
-                $this->sexo = $sexo;
 
                 return $this;
         }

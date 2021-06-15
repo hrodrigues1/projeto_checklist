@@ -30,13 +30,13 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
     public function insere_usuario($usuario) 
     {
 
-        $query = "INSERT INTO USUARIO" .
+        $query = "INSERT INTO USUARIO " .
         "(nome_usuario, login, senha, " .
-        "sexo, profissao, cpf, " .
+        "profissao, cpf, " .
         "cidade, estado) " .   
-        "values(:nome_usuario, :login, :senha, " .
-        ":sexo, :profissao, :cpf, " .
-        ":cidade, :estado) ";
+        "VALUES(:nome_usuario, :login, :senha, " .
+        ":profissao, :cpf, " .
+        ":cidade, :estado)";
 
         $stmt = $this->conn->prepare($query);
 
@@ -44,7 +44,6 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
         $stmt->bindValue(":nome_usuario", $usuario->getNome_usuario());
         $stmt->bindValue(":login", $usuario->getLogin());
         $stmt->bindValue(":senha", md5($usuario->getSenha()));
-        $stmt->bindValue(":sexo", $usuario->getSexo());
         $stmt->bindValue(":profissao", $usuario->getProfissao());
         $stmt->bindValue(":cpf", $usuario->getCpf());
         $stmt->bindValue(":cidade", $usuario->getCidade());

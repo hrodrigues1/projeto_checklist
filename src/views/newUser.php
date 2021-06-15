@@ -16,7 +16,7 @@
     <div class="card" id="login_view">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
-        <form>
+        <form  action="../controller/insere_usuario.php" method="POST">
           <div>
             <img src="assets/img/logo1.png" class="img-fluid" alt="...">
 
