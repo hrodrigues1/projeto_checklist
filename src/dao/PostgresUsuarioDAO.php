@@ -9,9 +9,8 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
 
         $usuario = null;
 
-        $query = "SELECT id_usuario, nome_usuario, login, senha, sexo, profissao, cpf, cidade, estado " .
-                 "FROM usuario where login = ? " .
-                 "LIMIT 1 OFFSET 0";
+        $query = "SELECT id_usuario, nome_usuario, login, senha, profissao, cpf, cidade, estado " .
+                 "FROM usuario where login = ? ";
      
         $stmt = $this->conn->prepare( $query );
         $stmt->bindParam(1, $login);
