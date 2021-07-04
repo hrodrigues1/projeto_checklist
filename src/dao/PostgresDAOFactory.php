@@ -5,12 +5,20 @@ include_once('PostgresUsuarioDAO.php');
 
 class PostgresDAOfactory extends DAOFactory {
 
-    // specify your own database credentials
+    // Dados conexao Douglas
+    // private $host = "localhost";
+    // private $db_name = "organizaAi";
+    // private $port = "5432";
+    // private $username = "postgres";
+    // private $password = "postgres";
+    // public $conn;
+
+    // Dados conexao Rodrigo
     private $host = "localhost";
     private $db_name = "organizaAi";
     private $port = "5432";
     private $username = "postgres";
-    private $password = "postgres";
+    private $password = "masterkey";
     public $conn;
   
     // get the database connection
