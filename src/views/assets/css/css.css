@@ -80,7 +80,7 @@ main {
 }
 .checklist__task_label {
     text-align: center;
-    margin: 20px 0;
+    margin: 2px 0;
     font-size: 1rem;
     font-weight: bold;
 	border-radius: 10px;
