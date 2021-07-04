@@ -19,8 +19,7 @@
 
 body {
     font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
-    /* Uso do Linear Gradients para angulo entre uma linha horizontal */
-    background: linear-gradient(-90deg, #B8860B,#F5DEB3,#D2B48C);
+    background: linear-gradient(-90deg,rgb(rgb(78, 78, 78), green, blue));
 }
 
 html, body, main {
@@ -88,7 +87,7 @@ main {
 }
 
 .checklist_button {
-    background-color: #B0E0E6;
+    background-color: #084298;
     border: none;
     width: 100%;
     text-transform: uppercase;
@@ -130,7 +129,7 @@ main {
 	border-radius: 10px;
 }
 .checklist_buttons {
-    background-color: #D2B48C;
+    background-color: #DC3545;
     border: none;
     width: 50%;
     text-transform: uppercase;
