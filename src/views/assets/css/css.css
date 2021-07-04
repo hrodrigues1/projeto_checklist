@@ -16,3 +16,150 @@
 #topper{
     position: center;
 }
+
+body {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
+    /* Uso do Linear Gradients para angulo entre uma linha horizontal */
+    background: linear-gradient(-90deg, #B8860B,#F5DEB3,#D2B48C);
+}
+
+html, body, main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+	border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	border-radius: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+	border-radius: 10px;
+}
+
+.checklist {
+    width: 100%;
+    margin: 0 auto;
+	border-radius: 10px;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	border-radius: 10px;
+}
+
+.checklist__task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	border-radius: 10px;
+}
+
+.checklist__task_text {
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 50px;
+    font-size: 1.2rem;
+	border-radius: 10px;
+}
+
+.checklist__button {
+    width: 100%;
+	border-radius: 10px;
+}
+.checklist__task_label {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: bold;
+	border-radius: 10px;
+}
+
+.checklist_button {
+    background-color: #B0E0E6;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.checklist__new-task {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+	border-radius: 10px;
+}
+
+.checklist__new-task_hidden {
+    color: #ccc;
+    text-decoration: line-through;
+    font-style:italic;
+	border-radius: 10px;
+}
+
+.checklist__new-task_remove-button {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+    padding: 0;
+	border-radius: 10px;
+}
+.checklist_buttons {
+    background-color: #D2B48C;
+    border: none;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+	border-radius: 10px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+	border-radius: 10px;
+}
+.timeline {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 60%;
+    }
+}
+
