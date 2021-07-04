@@ -141,6 +141,33 @@ main {
     border: 1px solid #ccc;
 	border-radius: 10px;
 }
+
+.to-do-list_compartilhamento1 {
+    background-color: #00FF00;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+}
+
+}
+.to-do-list_compartilhamento {
+    background-color: #00FF00;
+    border: none;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+}
 .buttons {
     width: 100%;
     display: flex;
