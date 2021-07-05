@@ -2,24 +2,26 @@
 
 include_once('DAOFactory.php');
 include_once('PostgresUsuarioDAO.php');
+include_once('PostgresChecklistDAO.php');
+
 
 class PostgresDAOfactory extends DAOFactory {
 
-    // Dados conexao Douglas
-    // private $host = "localhost";
-    // private $db_name = "organizaAi";
-    // private $port = "5432";
-    // private $username = "postgres";
-    // private $password = "postgres";
-    // public $conn;
+     //Dados conexao Douglas
+     private $host = "localhost";
+     private $db_name = "organizaAi";
+     private $port = "5432";
+     private $username = "postgres";
+     private $password = "postgres";
+     public $conn;
 
     // Dados conexao Rodrigo
-    private $host = "localhost";
-    private $db_name = "organizaAi";
-    private $port = "5432";
-    private $username = "postgres";
-    private $password = "masterkey";
-    public $conn;
+    //private $host = "localhost";
+    //private $db_name = "organizaAi";
+    //private $port = "5432";
+    //private $username = "postgres";
+    //private $password = "masterkey";
+    //public $conn;
   
     // get the database connection
     public function getConnection(){
@@ -38,6 +40,12 @@ class PostgresDAOfactory extends DAOFactory {
     public function getUsuarioDAO() {
 
         return new PostgresUsuarioDAO($this->getConnection());
+
+    }
+
+    public function getChecklistDAO() {
+
+        return new PostgresChecklistDAO($this->getConnection());
 
     }
 }

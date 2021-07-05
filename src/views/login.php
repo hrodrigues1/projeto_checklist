@@ -30,10 +30,11 @@
             <label>Senha</label>
             <input type="password" class="form-control" id="senha" name="senha" placeholder="Informe sua senha">
           </div>
+
           <button type="submit" class="btn btn-light btn-lg btn-block">Entrar</button>
-          <div id="links"> 
-            <button type="Esqueci minha senha" class="btn btn-link">Esqueci minha senha</button>
-            <button type="Criar conta" class="btn btn-link" href="newUser.php">Criar conta</button>
+          
+          <div class="cadastre-se">
+            Ainda não tem Cadastro? <a href="newUser.php">Cadastre-se</a>
           </div>
         </form>
       </div>

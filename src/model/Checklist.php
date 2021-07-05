@@ -1,20 +1,20 @@
 <?php
 
-class Checklist()
+class Checklist
 {
     private $id_checklist;
     private $nome_checklist;
     private $status;
     private $percent;
-    private $data; 
+    private $id_usuario;
 
-    public function __construct($id_checklist, $nome_checklist, $status, $percent, $data)
+    public function __construct($id_checklist, $nome_checklist, $status, $percent, $id_usuario)
     {   
         $this->id_checklist = $id_checklist;
         $this->nome_checklist = $nome_checklist;
         $this->status = $status;
         $this->percent = $percent;
-        $this->data = $data;
+        $this->id_usuario = $id_usuario;
     }
 
     /**
@@ -97,22 +97,23 @@ class Checklist()
         return $this;
     }
 
+
     /**
-     * Get the value of data
+     * Get the value of id_usuario
      */ 
-    public function getData()
+    public function getId_usuario()
     {
-        return $this->data;
+        return $this->id_usuario;
     }
 
     /**
-     * Set the value of data
+     * Set the value of id_usuario
      *
      * @return  self
      */ 
-    public function setData($data)
+    public function setId_usuario($id_usuario)
     {
-        $this->data = $data;
+        $this->id_usuario = $id_usuario;
 
         return $this;
     }

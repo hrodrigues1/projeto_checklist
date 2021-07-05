@@ -12,8 +12,12 @@ $senha = $_POST["senha"];
 
 
 $usuario = new Usuario(null, $nome, $email, $senha, $profissao, $cpf, $cidade, $estado);
+
 $dao = $factory->getUsuarioDAO();
-if($dao->insere_usuario($usuario))
+
+$retorno = $dao->insere_usuario($usuario);
+
+if($retorno)
 {
     header("Location: ../views/login.php");
     exit;

@@ -22,7 +22,6 @@ class PostgresUsuarioDAO extends PostgresDAO implements UsuarioDAO
                                    $row['login'], $row['senha'], $row['sexo'],
                                    $row['profissao'], $row['cpf'], $row['cidade'], $row['estado']);
         } 
-     
         return $usuario;
     }
 

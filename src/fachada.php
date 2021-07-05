@@ -1,7 +1,9 @@
 <?php
 
 include_once('model/Usuario.php');
+include_once('model/Checklist.php');
 include_once('dao/UsuarioDAO.php');
+include_once('dao/ChecklistDAO.php');
 include_once('dao/DAOFactory.php');
 include_once('dao/PostgresDAOFactory.php');
 
