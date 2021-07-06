@@ -9,7 +9,7 @@ class PostgresDAOfactory extends DAOFactory {
 
      //Dados conexao Douglas
      private $host = "localhost";
-     private $db_name = "organizaAi";
+     private $db_name = "Organizai";
      private $port = "5432";
      private $username = "postgres";
      private $password = "postgres";
