@@ -15,11 +15,12 @@
             <img src="assets/img/logo1.png" class="img-fluid" alt="...">
         </div
         <main>
-			<h1>OrganizAí</h1>
+			<h1>Organizaí</h1>
 			<br>
-            <p>O aplicativo OrganizAí foi organizado para ajudar você que não gosta de esquecer nada no seu dia a dia, sabemos que seu dia anda muito corrido.</p>
-            <p>Então nos use e abuse, crie suas listas de tarefas do dia, do mes, de alguma viagem, mercado, ou qualquer outra coisa que você imaginar.</p>
-            <p>Gostou? então compartilhe com os amigos, parentes, suas listas criadas.</p>
+            <p>O aplicativo Organizaí foi criado no objetivo de lhe dar uma mãozinha no dia a dia,sabemos que seu dia é muito corrido.
+			<p>Então nos use e abuse, crie suas listas de tarefas do dia, do mês, da tal viagem que você sempre esquece o shampoo, ou que esta prometendo a anos,
+			quando você vai no mercado acaba esquecendo o mais importante? então crie sua lista agora mesmo.
+            Gostou e quer compartilhar com a vizinha? então compartilhe com quem você quiser as suas listas criadas.</p>
 
             <a href="checklist_view.php">Voltar</a>
         
